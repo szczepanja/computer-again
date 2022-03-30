@@ -30,8 +30,7 @@ object Main extends App {
     case _ => true
   }
 
-  instructions.foldLeft(0) { (s, cmd) =>
-    s.sum()
-    s.execute(cmd)
+  val state: State = instructions.head match {
+    case s: State => s
   }
 }
