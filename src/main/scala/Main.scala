@@ -1,15 +1,5 @@
 import scala.io.Source
 
-case class State(x: Int) {}
-
-case class Sum(symbol: Char, x: Int) {}
-
-case class Minus(symbol: Char, x: Int)
-
-case class Multiply(symbol: Char, x: Int)
-
-case class Divide(symbol: Char, x: Int)
-
 object Main extends App {
   val fileName = "instructions.txt"
   val lines = Source.fromFile(fileName).getLines().toSeq
